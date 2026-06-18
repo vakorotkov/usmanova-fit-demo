@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Онлайн-фитнес с Катей Усмановой: тренировки, питание и подбор программы под вашу цель.">
+    <title>Фитнес с Катей Усмановой</title>
+    <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="%23d95891"/><path d="M18 35c8-17 20-17 28 0" fill="none" stroke="white" stroke-width="7" stroke-linecap="round"/><circle cx="32" cy="23" r="6" fill="white"/></svg>'>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main>
+      <section class="hero" id="top">
+        <div class="hero__inner">
+          <div class="hero__copy">
+            <h1>Приведите тело в форму с чемпионкой Катей Усмановой</h1>
+            <p class="hero__lead">без диет, голода и запретов<br>с пользой для здоровья</p>
+            <p class="hero__text">
+              Похудеть, подтянуть попу и живот, набрать форму в зале,
+              восстановиться после родов - тренировки и питание под вашу цель
+            </p>
+            <button class="primary-button" data-scroll-target="#request">
+              <span>Выбрать программу</span>
+              <span class="button-icon" aria-hidden="true">→</span>
+            </button>
+            <p class="hero__note">Для дома, зала, беременности и восстановления</p>
+          </div>
+          <div class="hero__photo" aria-label="Катя Усманова с гантелей">
+            <img src="https://fs-thb02.getcourse.ru/fileservice/file/thumbnail/h/8d7e3aa384b597937b9504925ead6325.png/s/s1200x/a/934144/sc/68" alt="Катя Усманова с гантелей">
+          </div>
+        </div>
+      </section>
+
+      <section class="results" id="results">
+        <div class="section-heading">
+          <p>580 000 девушек</p>
+          <h2>уже тренируются с Катей</h2>
+        </div>
+
+        <div class="results-card">
+          <div class="result-points">
+            <p><span aria-hidden="true">→</span>Первые видимые результаты уже на 6-й день тренировок</p>
+            <p><span aria-hidden="true">→</span>В среднем ученицы теряют 4-6 кг за первый месяц</p>
+          </div>
+
+          <div class="live-counter" aria-label="Количество участниц, которые тренируются прямо сейчас">
+            <span></span>
+            <div>
+              <p>Тренируются прямо сейчас</p>
+              <strong>3 696</strong>
+            </div>
+          </div>
+
+          <div class="gallery-shell">
+            <button class="gallery-nav gallery-nav--left" type="button" aria-label="Листать влево">‹</button>
+            <div class="gallery-track" id="gallery" tabindex="0" aria-label="Галерея результатов">
+              <article class="gallery-card">
+                <img src="https://fs.getcourse.ru/fileservice/file/download/a/934144/sc/85/h/690560420ca42fc7a6b317093fb821fb.jpg" alt="Результат ученицы до и после">
+              </article>
+              <article class="gallery-card">
+                <img src="https://fs.getcourse.ru/fileservice/file/download/a/934144/sc/374/h/1b12583b7b7cd12c7ab0b2bdee77c7ef.jpg" alt="Результат ученицы до и после">
+              </article>
+              <article class="gallery-card">
+                <img src="https://fs.getcourse.ru/fileservice/file/download/a/934144/sc/73/h/804bfecb9a8fcf5ec3f16ffaf93cda1e.jpg" alt="Результат ученицы до и после">
+              </article>
+              <article class="gallery-card">
+                <img src="https://fs.getcourse.ru/fileservice/file/download/a/934144/sc/85/h/690560420ca42fc7a6b317093fb821fb.jpg" alt="Результат ученицы до и после">
+              </article>
+              <article class="gallery-card">
+                <img src="https://fs.getcourse.ru/fileservice/file/download/a/934144/sc/374/h/1b12583b7b7cd12c7ab0b2bdee77c7ef.jpg" alt="Результат ученицы до и после">
+              </article>
+            </div>
+            <button class="gallery-nav gallery-nav--right" type="button" aria-label="Листать вправо">›</button>
+          </div>
+
+          <div class="gallery-action">
+            <button class="text-button" type="button" id="scrollGallery">
+              <span>Листай вправо</span>
+              <span aria-hidden="true">→</span>
+            </button>
+            <div class="gallery-progress" aria-hidden="true"><span></span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="request" id="request">
+        <div class="request__header">
+          <h2>Не знаете, с чего начать?</h2>
+          <p>Оставьте заявку - подберем программу под вашу цель и уровень.</p>
+        </div>
+
+        <div class="request__grid">
+          <form class="request-form" id="requestForm" novalidate>
+            <label>
+              Имя
+              <input type="text" name="name" autocomplete="name" placeholder="Например, Анна" required>
+            </label>
+            <label>
+              Телефон или Telegram
+              <input type="text" name="contact" autocomplete="tel" placeholder="+7 999 000-00-00" required>
+            </label>
+            <label>
+              Цель
+              <select name="goal" required>
+                <option value="">Выберите цель</option>
+                <option>Похудеть</option>
+                <option>Подтянуть тело</option>
+                <option>Тренироваться в зале</option>
+                <option>Восстановиться после родов</option>
+              </select>
+            </label>
+            <fieldset>
+              <legend>Где удобнее ответить?</legend>
+              <div class="messenger-options">
+                <label><input type="radio" name="messenger" value="Telegram" checked><span>TG</span></label>
+                <label><input type="radio" name="messenger" value="VK"><span>VK</span></label>
+                <label><input type="radio" name="messenger" value="Email"><span>@</span></label>
+              </div>
+            </fieldset>
+            <label class="policy">
+              <input type="checkbox" name="policy" required>
+              <span>Согласна на обработку персональных данных</span>
+            </label>
+            <button class="primary-button primary-button--full" type="submit">
+              <span>Отправить заявку</span>
+              <span class="button-icon" aria-hidden="true">→</span>
+            </button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="contact-card">
+            <p>Можно написать напрямую</p>
+            <div class="contact-links">
+              <a class="social social--tg" href="https://t.me/UsmanovaSport_bot" target="_blank" rel="noreferrer" aria-label="Telegram">TG</a>
+              <a class="social social--vk" href="https://vk.ru/usmanovateam" target="_blank" rel="noreferrer" aria-label="VK">VK</a>
+              <a class="social social--mail" href="mailto:help@usmanovasport.ru" aria-label="Email">@</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="faq__inner">
+          <h2>Отвечаем на вопросы</h2>
+          <div class="accordion">
+            <article class="accordion-item">
+              <button type="button" aria-expanded="false">
+                <span>Подойдет ли мне программа, если я никогда не тренировалась?</span>
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-panel">
+                <p>Да. В программах есть понятные видеоуроки, спокойный вход в нагрузку и варианты упражнений для начинающих.</p>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <button type="button" aria-expanded="false">
+                <span>Сколько времени в день нужно на тренировки?</span>
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-panel">
+                <p>Обычно достаточно 20-40 минут. Занятия можно включать утром, днем или вечером - в удобном темпе.</p>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <button type="button" aria-expanded="false">
+                <span>Можно ли тренироваться дома? Нужно ли оборудование?</span>
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-panel">
+                <p>Да, большинство программ рассчитано на дом. Часто хватает коврика и собственного веса, иногда пригодятся резинки или легкие гантели.</p>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <button type="button" aria-expanded="false">
+                <span>На какой срок открывается доступ к программе?</span>
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-panel">
+                <p>Срок доступа зависит от выбранной программы. После заявки менеджер подскажет подходящий формат.</p>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <button type="button" aria-expanded="false">
+                <span>Можно ли оплатить в рассрочку?</span>
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-panel">
+                <p>Да, рассрочка доступна. Условия можно уточнить перед оплатой.</p>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <button type="button" aria-expanded="false">
+                <span>Я живу не в России. Смогу заниматься?</span>
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-panel">
+                <p>Да. Нужен только интернет и устройство, на котором удобно смотреть уроки.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
